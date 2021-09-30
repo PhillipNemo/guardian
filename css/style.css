@@ -385,12 +385,12 @@ main .bottom #mining-status .status-4{
         padding-top:30px ;
     }
     aside{
-        position: absolute;
+        position: fixed;
         z-index: 1;
         left: -100%;
         top: 0;
-        overflow-x: hidden;
         transition: .3s ease-in;
+         height:100vh;
     }
     .search{
         width: 100%;

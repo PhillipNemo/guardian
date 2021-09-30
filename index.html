@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid page</title>
+    <link rel="stylesheet" href="./iconfont/icofont/icofont/icofont.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="app">
+        <aside>
+            <!-- side bar -->
+            <a href="./index.html" id="logo">
+            <div class="logo-icon"></div>
+            <span>Guardians</span>
+            </a>
+
+            <ul>
+                <li class="active"><a class="active" href="">
+                    <i class="icofont-home"></i>
+                  <span>Dashboard</span>
+                 </a></li>
+                <li><a href="">
+                    <i class="icofont-wallet"></i>
+                    <span>Wallet</span>
+                </a></li>
+                <li><a href="">
+                    <i class="icofont-random"></i>
+                    <span>Statistics</span>
+                </a></li>
+                <li><a href="">
+                    <i class="icofont-globe"></i>
+                    <span>Transaction</span>
+                </a></li>
+                <li><a href="">
+                    <i class="icofont-ui-home"></i>
+                    <span>Exchange</span>
+                </a></li>
+                <li><a href="">
+                    <i class="icofont-newspaper"></i>
+                    <span>News</span>
+
+                </a></li>
+            </ul>
+
+            <div style="margin-top: 50px;"class="active-devices">
+                <h3>Active Devices</h3>
+                <div class="device-card">
+                    <div class="icon">
+                        <i class="icofont-iphone"></i>
+                    </div>
+                    <div class="info">
+                        <h6>iphone 6s Plus</h6>
+                        <p class="status">Active</p>
+                        <div class="option">
+                        </div>
+                        
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                      </svg>
+                </div>
+                
+            </div>
+
+            <div class="active-devices">
+                <div class="device-card">
+                    <div class="icon">
+                        <i class="icofont-laptop"></i>
+                    </div>
+                    <div class="info">
+                        <h6>Macbook 2017</h6>
+                        <p class="status">Active</p>
+                        <div class="option">
+                        </div>
+                        
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                      </svg>
+                </div>
+                
+            </div>
+            <div class="image">
+                <i class="icofont-business-man img"></i>
+            </div>
+        </aside>
+
+        <main>
+            <div class="menu">
+                <div class="menu-symbol"></div>
+            </div>
+            <div class="top">
+                <div class="welcome">
+                        <h3>Welcome to your Dashboard</h3>
+                        <div class="coin-block">
+                                <div class="coin active"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                                <div class="coin"></div>
+                            <div class="search">
+                              <h3>SEARCH</h3>
+                                <input type="text" placeholder="Enter search term">
+                                <button><i class="icofont-search"></i></button>
+                            </div>
+                        </div>
+
+                        </div>
+                        <h3 class="overview">Overview</h3>
+                    <div id="overview">
+                        <div class="balance">
+                            <div class="available"></div>
+                            <div class="nio-wallet"></div>
+                            <div class="etherium-wallet"></div>
+                        </div>
+                        <div class="trends">
+                            <div class="item-1"></div>
+                            <div class="item-2"></div>
+                            <div class="item-3"></div>
+                            <div class="item-4"></div>
+                        </div>
+                   
+
+                        <div class="third-column">
+                            <div class="partner-1"></div>
+                            <div class="partner-2"></div>
+                            <div class="partner-3"></div>
+                            <div class="partner-4"></div>
+                            <div class="partner-5"></div>
+                        </div>
+                   </div>
+            </div>
+            <div class="title">
+                <h3 class="mining">Mining Status</h3>
+            </div>
+                <div class="bottom">
+                    <div id="security">
+                        <div class="security-1"></div>
+                        <div class="security-2"></div>
+                        <div class="security-3"></div>
+                        <div class="security-4"></div>
+                    </div>
+                    <div id="mining-status">
+                        <div class="status-1"></div>
+                        <div class="status-2"></div>
+                        <div class="status-3"></div>
+                        <div class="status-4"></div>
+                    </div>
+                </div>
+    </main>
+  </div>
+
+
+
+
+
+
+
+  <script>
+let menu = document.querySelector(".menu")
+let aside = document.querySelector("aside")
+
+let isOpen = true;
+
+menu.addEventListener('click', () => {
+    if( isOpen == true){
+   aside.style.left="0";
+   isOpen = false;
+    }else{
+        aside.style.left="-100%";
+        isOpen = true;
+    }
+})
+ 
+
+  </script>
+</body>
+</html>
+
+

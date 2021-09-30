@@ -342,9 +342,10 @@ main .bottom #mining-status .status-4{
 }
 .menu{
     cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top:10px;
+    position: fixed;
+    right: 30px;
+    top:30px;
+     z-index:2;
 }
 .menu .menu-symbol{
     width: 25px;
